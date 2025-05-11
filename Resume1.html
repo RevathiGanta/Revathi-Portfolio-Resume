@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f9;
+      display: flex;
+    }
+    nav {
+      width: 220px;
+      height: 100vh;
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 2rem 1rem;
+      position: fixed;
+    }
+    nav h2 {
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+    }
+    nav ul li {
+      margin-bottom: 1rem;
+    }
+    nav ul li a {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #1abc9c;
+    }
+    main {
+      margin-left: 220px;
+      width: calc(100% - 220px);
+    }
+    header {
+      background: linear-gradient(to right, #1abc9c, #16a085);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    header p {
+      font-size: 1rem;
+    }
+    .section {
+      padding: 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      scroll-behavior: smooth;
+      padding: 1rem 0;
+    }
+    .carousel-item {
+      flex: 0 0 auto;
+      width: 280px;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .carousel-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+    .carousel-item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+    ul.roles {
+      margin: 1rem 0;
+      padding-left: 1.2rem;
+    }
+    ul.roles li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h2>My Portfolio</h2>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#career">Career Objective</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header id="about">
+      <img src="C:\Users\intel\Desktop\Revathi\Images\Revathi.jpg" alt="Profile Photo">
+      <h1>Mudalla Revathi</h1>
+      <p>Graphic Designer & Junior Engineer</p>
+    </header>
+
+    <section class="section" id="career">
+      <h2>Career Objective</h2>
+      <p>To obtain a challenging position as a Graphic Designer in a creative environment where I can utilize my design skills, technical expertise, and passion for visual storytelling, while also leveraging my engineering background to bring a unique perspective to problem-solving and innovation.</p>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="carousel">
+        <div class="carousel-item">Adobe Photoshop</div>
+        <div class="carousel-item">Adobe Illustrator</div>
+        <div class="carousel-item">Adobe InDesign</div>
+        <div class="carousel-item">Canva</div>
+        <div class="carousel-item">MS Office</div>
+        <div class="carousel-item">HTML</div>
+        <div class="carousel-item">CSS</div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <h2>Experience</h2>
+
+      <h3>Graphic Designer – Efftronics Private Limited (1 Year)</h3>
+      <ul class="roles">
+        <li>Designed branding materials using Photoshop, Illustrator, and InDesign.</li>
+        <li>Created social media posts, web banners, and digital flyers.</li>
+        <li>Collaborated with developers to implement HTML/CSS web components.</li>
+        <li>Managed design projects from concept to delivery under tight deadlines.</li>
+        <li>Used Canva for rapid prototyping and brand-aligned presentations.</li>
+      </ul>
+
+      <h3>Junior Engineer (Line Leader) – Bharat FIH (2 Years)</h3>
+      <ul class="roles">
+        <li>Led a production line ensuring efficient mobile phone assembly processes.</li>
+        <li>Monitored equipment performance and coordinated daily output goals.</li>
+        <li>Trained and supervised operators for quality and safety compliance.</li>
+        <li>Worked with QA teams to troubleshoot and resolve assembly line issues.</li>
+        <li>Maintained detailed reports using MS Office tools for production analysis.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Highlighted Projects</h2>
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="C:\Users\intel\Desktop\Revathi\Images\ID card.jpg" style="height: 50%;width: 50%;" alt="Brand Kit">
+          <h3>Brand Kit</h3>
+          <p>Logo, color palette, and design templates for a startup launch.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\intel\Desktop\Revathi\Images\Poster.png"style="height: 50%;width: 50%;" alt="Marketing Poster">
+          <h3>Marketing Poster</h3>
+          <p>High-impact visuals designed for digital and print campaigns.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\intel\Desktop\Revathi\Images\2-bedroom-Floorplan-1.jpg" style="height: 50%;width: 50%;"alt="Landing Page">
+          <h3>Responsive Landing Page</h3>
+          <p>HTML/CSS website built with SEO-friendly structure.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:janesmith@example.com">gantarevathi457@gmail.com</a></p>
+    </section>
+  </main>
+</body>
+</html>
