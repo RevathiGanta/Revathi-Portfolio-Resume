@@ -1,240 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mudalla Revathi | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-    body {
-      line-height: 1.6;
-      background: #f8f9fa;
-      color: #333;
-    }
-    header {
-      background: #343a40;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: #fff;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    section {
-      padding: 2rem;
-    }
-    .home {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .home img {
-      width: 150px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-    }
-    .button {
-      padding: 0.75rem 1.5rem;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 25px;
-      margin-top: 1rem;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-    }
-    .skills .skill-list, .projects .project-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .skill, .project {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .carousel {
-      display: flex;
-      overflow-x: auto;
-      gap: 20px;
-      scroll-behavior: smooth;
-      padding: 1rem 0;
-    }
-    .carousel-item {
-      flex: 0 0 auto;
-      width: 280px;
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .carousel-item:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
-    }
-    .carousel-item img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-    }
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    footer {
-      background: #343a40;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    @media (min-width: 768px) {
-      .home {
-        flex-direction: row;
-        justify-content: center;
-        text-align: left;
-      }
-      .home img {
-        margin-right: 2rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Revathi Ganta, Creative Graphic Designer and Front-End Developer from Andhra Pradesh, India.">
+    <title>Revathi Ganta | Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Mudalla Revathi</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section id="home" class="home">
-    <img src="Revathi.jpg" alt="Profile Photo">
-      <h2>Graphic Designer & Frontend Developer</h2>
-      <p>Creative and detail-oriented designer with experience in print and web media.</p>
-      <a href="photoshop resume.png"class="button">Download Resume</a>
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">Revathi<span>.G</span></a>
+
+        <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+
+    <!-- కొత్తది -->
+    <li><a href="videos.html">Videos</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-  </section>
+</nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am Mudalla Revathi with 1 year of experience as a Graphic Designer at Efftronics Pvt Ltd, and 2.7 years at Bharat FIH as a Junior Engineer. I hold a B-Tech in ECE and have strong skills in Adobe Suite, HTML, CSS, and JavaScript.</p>
-  </section>
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container hero-content">
+        <h3>GRAPHIC DESIGNER & FRONT-END DEVELOPER</h3>
+        <h1>Creating Professional Designs That Inspire & Build Brands</h1>
+        <p>
+            Hello! I'm <strong>Revathi Ganta</strong>, a passionate Graphic Designer with experience in
+            branding, brochures, signboards, wedding invitations, social media creatives,
+            product packaging, flyers, posters, and print media.
+            <br><br>
+            I also have knowledge of Front-End Development using HTML, CSS.
+            Along with my creative background, I possess over <strong>1.7 years of industrial
+            experience as a Junior Engineer</strong> in mobile manufacturing.
+            <br><br>
+            I enjoy transforming creative ideas into visually appealing designs that help
+            businesses communicate effectively and build strong brand identities.
+        </p>
 
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <div class="skill-list">
-      <div class="skill">Adobe Photoshop</div>
-      <div class="skill">Adobe Illustrator</div>
-      <div class="skill">InDesign</div>
-      <div class="skill">CorelDRAW</div>
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">MS Office</div>
+        <div class="hero-btns">
+            <a href="contact.html" class="btn btn-primary">
+                Hire Me <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <!-- ఇక్కడ క్లాస్ సింటాక్స్ ఫిక్స్ చేసాము -->
+            <a href="Resume/photoshop resume update.pdf" class="btn btn-secondary" download>
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+            
+            <a href="projects.html" class="btn btn-secondary">
+                View Projects
+            </a>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project">Posters & Flyers</div>
-      <div class="project">Railway Signaling Notes</div>
-      <div class="project">ID Cards & Brochures</div>
-      <div class="project">Architectural 3D Designs</div>
+<!-- EXPERTISE SECTION -->
+<section class="container">
+    <h2 class="section-title">My <span>Expertise</span></h2>
+    <div class="grid-3">
+        <div class="card">
+            <i class="fas fa-palette"></i>
+            <h3>Graphic Design</h3>
+            <p>Creative designs for brochures, flyers, posters, banners, product packaging, and marketing materials that strengthen brand identity.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-pen-nib"></i>
+            <h3>Brand Identity Design</h3>
+            <p>Professional logo design, business branding, visiting cards, letterheads, and visual identity solutions for businesses.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Front-End Development</h3>
+            <p>Responsive websites built using HTML, CSS, with clean layouts and user-friendly interfaces.</p>
+        </div>
     </div>
-  </section>
-  <section class="section" id="projects">
-      <h2>Highlighted Projects</h2>
-      <div class="carousel">
-        <div class="carousel-item">
-          <img src="3D Design.jpeg" style="height: 50%;width: 100%;" alt="Brand Kit">
-          <h3>DMLC(3D Design)</h3>
-          <p style="margin-bottom:30px;">Data Logger Maintenance Center(Secuderbad Division)</p>
-           <a href="3D Design.jpeg"class="button">Download image</a>
+</section>
+
+<!-- WHY CHOOSE ME SECTION -->
+<section class="container">
+    <h2 class="section-title">Why <span>Choose Me</span></h2>
+    <div class="grid-3">
+        <div class="card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Creative Thinking</h3>
+            <p>Innovative and unique design concepts tailored to meet business goals and customer expectations.</p>
         </div>
-        <div class="carousel-item">
-          <img src="Poster.png"style="height: 50%;width: 100%;" alt="Marketing Poster">
-          <h3>Posters</h3>
-          <p style="margin-bottom:10px;">A poster I designed to extend Srirama Navami greetings on behalf of my company.</p>
-           <a href="Poster.png"class="button">Download image</a>
+
+        <div class="card">
+            <i class="fas fa-award"></i>
+            <h3>Quality Work</h3>
+            <p>Focused on delivering high-quality, print-ready, and pixel-perfect designs within deadlines.</p>
         </div>
-        <div class="carousel-item">
-          <img src="Block Diagrams1.jpeg" style="height: 50%;width: 100%;"alt="Landing Page">
-          <h3>Notes on  Railway signalling </h3>
-          <p style="margin-bottom:5px;">Ramagundam NTPC Sliding DL Network Distributed EI</p>
-           <a href="Block Diagrams1.jpeg"class="button">Download image</a>
+
+        <div class="card">
+            <i class="fas fa-users"></i>
+            <h3>Client Satisfaction</h3>
+            <p>Committed to understanding client requirements, maintaining clear communication, and delivering outstanding results.</p>
         </div>
-        <div class="carousel-item">
-          <img src="Terrace Flow-01.png" style="height: 50%;width: 100%;"alt="Landing Page">
-          <h3>Product Sticker</h3>
-          <p style="margin-bottom:30px;">'Aquagenix'.label is pasted on the product.</p>
-           <a href="Terrace Flow-01.png"class="button">Download image</a>
-        </div>
-      </div>
-    </section>
-    <section class="section" id="projects">
-      <div class="carousel">
-        <div class="carousel-item">
-          <img src="Broucher-01.png" style="height: %;width: 100%;" alt="Brand Kit">
-          <h3>Broucher</h3>
-          <p style="margin-bottom:30px;">I designed a brochure for my company.</p>
-           <a href="Broucher-01.png"class="button">Download image</a>
-        </div>
-        <div class="carousel-item">
-          <img src="Id card.png"style="height: 50%;width: 100%;" alt="Marketing Poster">
-          <h3>ID card </h3>
-          <p style="margin-bottom:30px;">I create ID cards for new joiners and confirmed employees in my company.</p>
-           <a href="Id card.png"class="button">Download image</a>
-        </div>
-        <div class="carousel-item">
-          <img src="vistingcard-2-01-01.png" style="height: 50%;width: 100%;"alt="Landing Page">
-          <h3>Visting Card</h3>
-          <p style="margin-bottom:30px;">I create visting cards for committe members&marketing</p>
-           <a href="vistingcard-2-01-01.png"class="button">Download image</a>
-        </div>
-        <div class="carousel-item">
-          <img src="India's waste-01.png" style="height: 50%;width: 100%;"alt="Landing Page">
-          <h3>flyer</h3>
-          <p style="margin-bottom:30px;">Informal Recycling Sector: Nearly 95% of India’s e-waste is handled by unregulated informal workers using unsafe methods.</p>
-           <a href="India's waste-01.png"class="button">Download image</a>
-        </div>
-      </div>
-    </section>
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: gantarevathi457@gmail.com | Phone: 9441925126</p>
-    <address>Permenent Address</address>
-    <P>Thangellamudi,ThilakNagar,Eluru,Eluru Dist A.p Pin No 534005</P>
-    <address>Temporary Address</address>
-    <P>Tidco house,Mangalagiri,Guntur Dist A.p Pin No 522503</P>
-  </section>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Revathi Ganta | Graphic Designer & Front-End Developer</p>
+</footer>
+
+<div class="scroll-top" id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+<!-- జావాస్క్రిప్ట్ పాత్ కరెక్ట్ చేసాము -->
+<script src="./script.js"></script>
 </body>
 </html>
